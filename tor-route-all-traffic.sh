@@ -15,7 +15,7 @@
 #  ORGANIZATION:
 #       CREATED: 2015-07-06 05:59
 #        Edited: 2019-05-02 00:50
-#      REVISION: 0.1
+#      REVISION: 0.2
 #===============================================================================
 
 iptables_backup="/tmp/saved_iptables.v4"
