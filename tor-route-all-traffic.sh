@@ -11,7 +11,7 @@
 #          BUGS: ---
 #         NOTES: ---
 #        AUTHOR: David Personette (dperson@gmail.com),
-#                Yakup.Ates@rub.de
+#                Yakup Ates       (Yakup.Ates@rub.de)
 #  ORGANIZATION:
 #       CREATED: 2015-07-06 05:59
 #        Edited: 2019-05-02 00:50
