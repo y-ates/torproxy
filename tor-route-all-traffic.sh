@@ -2,7 +2,7 @@
 #===============================================================================
 #          FILE: tor-route-all-traffic.sh
 #
-#         USAGE: ./tor-route-all-traffic.sh [-restore]
+#         USAGE: ./tor-route-all-traffic.sh
 #
 #   DESCRIPTION: Route all traffic through a docker tor container
 #
@@ -11,11 +11,11 @@
 #          BUGS: ---
 #         NOTES: ---
 #        AUTHOR: David Personette (dperson@gmail.com),
-#                Yakup Ates       (Yakup.Ates@rub.de)
+#                Yakup.Ates@rub.de
 #  ORGANIZATION:
 #       CREATED: 2015-07-06 05:59
 #        Edited: 2019-05-02 00:50
-#      REVISION: 0.2
+#      REVISION: 0.1
 #===============================================================================
 
 iptables_backup="/tmp/saved_iptables.v4"
@@ -108,6 +108,6 @@ else
     iptables -A OUTPUT -m owner --uid-owner $_tor_uid -j ACCEPT
     iptables -A OUTPUT -j REJECT
 
-	sleep 5
+    sleep 5
     echo "[#] your ip is now: $(curl https://check.torproject.org |& grep -Po "(?<=strong>)[\d\.]+(?=</strong)")"
 fi
